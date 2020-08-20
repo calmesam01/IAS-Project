@@ -1,8 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="css">
+</head>
+<body style="margin: 20px; padding: 10px;">
 {% extends 'myapp/base.html' %}
 {% block body_block %}
-    <h1>{{First_name}} {{Last_name}}</h1>
+    <center><h2>{{First_name}} {{Last_name}}</h2></center><br>
 
-    <h2>List of courses ordered</h2>
+    <center><h3>List of courses ordered</h3></center>
     {% if order_list %}
         {% for orders in order_list %}
             <li> {{orders}} </li>
@@ -11,7 +20,7 @@
         <p>No orders to show!!!!</p>
     {% endif %}
 
-    <h2>List of Topics interested in</h2>
+    <center><h3>List of Topics interested in</h3></center>
     {% if interested_list %}
         {% for course in interested_list %}
             <li> {{course}} </li>
@@ -23,3 +32,5 @@
     <li class="hbar1"><a href="{% url 'myapp:user_logout' %}">Log out</a></li>
     </ul>
 {% endblock %}
+</body>
+</html>
