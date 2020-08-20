@@ -2,10 +2,11 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>E-Learning WebApp!</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="css">
 </head>
-<body>
+<body style="margin: 20px; padding: 20px;">
 {% if top_list %}
-    <h2>List of Topics</h2>
+    <center><h2>List of Topics</h2></center>
     <ol>
         {% for top in top_list %}
         <li> <p> <a href="{% url 'myapp:detail' top.id %}">{{ top.name }}</a></p> </li>
@@ -16,7 +17,7 @@
 {% endif %}
 
 {% if course_list %}
-    <h2>List of Courses</h2>
+<center><h2>List of Courses</h2></center>
         {% for course in course_list %}
                 {% if course.for_everyone is True %}
                 </br>{{ course.id }}. {{ course }} <b> - is for everyone</b></br>
