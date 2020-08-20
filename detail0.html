@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>E-Learning WebApp!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="css">
 </head>
-<body>
-
+<body style="margin: 20px; padding: 10px;">
+    
 <br> <b>Topic name: </b> {{ tp.name }} <br>
 
 <br> <b>category: </b> {{ tp.category }} <br>
@@ -19,5 +21,4 @@
 <p><a href="{% url 'myapp:index' %}">Index page </a></p>
 
 </body>
-
 </html>
