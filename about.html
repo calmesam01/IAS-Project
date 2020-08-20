@@ -1,7 +1,26 @@
-{% extends 'myapp/base.html' %}
-{% block body_block %}
-    <h2> This is an E-learning Website! Search our Topics to find all available Courses. </h2>
-    <p>{{ about_visits }}</p>
-{#    <p><a href="/myapp/index">Home page</a></p>#}
-{#    <p><a href="{% url 'myapp:index' %}">home page</a></p>#}
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="css">
+    <script src='main.js'></script>
+</head>
+<body>
+    {% extends 'myapp/base.html' %}
+    {% block body_block %}
+    <div class="container" >
+        <center><h2> This is an E-learning Website! Search our Topics to find all available Courses. </h2></center>
+        <p>{{ about_visits }}</p>
+        {#    <p><a href="/myapp/index">Home page</a></p>#}
+        {#    <p><a href="{% url 'myapp:index' %}">home page</a></p>#}
+        {% endblock %}
+    </div>
+</body>
+</html>
+
+
+
+    
